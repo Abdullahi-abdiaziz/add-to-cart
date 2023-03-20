@@ -1,0 +1,109 @@
+:root {
+  --gray-200: hsl(188, 59%, 85%);
+  --gray-100: hsl(233, 100%, 97%);
+  --red-500: hsl(349, 41%, 48%);
+  --input: hsl(29, 100%, 13%);
+  --hot: hsl(29, 78%, 45%);
+  --btn: hsl(0, 0%, 99%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;  
+  background: var(--gray-100);
+  color: #432000;
+  user-select: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 320px;
+
+  padding-inline: 2rem;
+  padding-block: 3rem;
+}
+
+main > * {
+  display: block;
+}
+
+main .img-logo {
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.input-field, 
+.add-btn {
+  border: none;
+  outline: none;
+
+  width: 100%;
+  font: inherit;
+
+  border-radius: 8px;
+
+  padding: .75rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.input-field {
+  margin-top: 1rem;
+  color: var(--input);
+  background: var(--gray-200);
+  text-align: center;
+}
+
+.add-btn {
+  background: var(--red-500);
+  color: var(--btn);
+  cursor: pointer;
+}
+.add-btn:hover {
+  background-color: #432000;
+}
+
+.lists {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+li {
+  padding: 1rem;
+  background-color: #FFFDF8;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  border-radius: 5px;
+
+  flex-grow: 1;
+  text-align: center;
+
+  list-style: none;
+  cursor: pointer;
+}
+li:hover {
+  background-color: #FFECC7;
+}
